@@ -174,6 +174,10 @@ function listlog() {
 
 #### install itself
 function install() {
+	if [ $(whoami) != root ]; then
+		echo -n "You have to run './dynmod --install' as root"
+		exit 0
+	fi
 
 	# if dynmotd does not exist then install it
 	if [ ! -f ${DYNMOTD_INSTALL_PATH}/${DYNMOTD_FILENAME} ]; then
