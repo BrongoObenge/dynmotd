@@ -40,7 +40,7 @@ C_LBLUE="\033[1;34m"  # Light Blue
 C_CYAN="\033[0;36m"   # Cyan
 C_LCYAN="\033[1;36m"  # Light Cyan
 C_PINK="\033[0;35m"   # Purple
-C_PINK="\033[1;35m"   # Light Purple
+C_LPINK="\033[1;35m"  # Light Purple
 C_GREEN="\033[0;32m"  # Green
 C_LGREEN="\033[1;32m" # Light Green
 C_BROWN="\033[0;33m"  # Brown/Orange
@@ -49,9 +49,9 @@ C_YELLOW="\033[1;33m" # Yellow
 #### color schemes
 
 ## DOT, day of the tentacle scheme
-F1=${C_GREY}
-F2=${C_PINK}
-F3=${C_LGREEN}
+F1=${C_LBLUE}
+F2=${C_LPINK}
+F3=${C_LCYAN}
 F4=${C_RED}
 
 ## retro hacker
