@@ -23,16 +23,17 @@ New features comming soon
 
 | Distribution 	  | Status                |
 |-----------------|-----------------------|
-| CentOS 8     	  | Successfully tested   |
-| Debian 8        | Successfully tested   |
-| Debian 9     	  | Successfully tested   |
-| Debian 10       | Successfully tested   |
-| Debian 11    	  | Successfully tested   |
-| Debian 12       | Successfully tested   |
-| Ubuntu 18       | Successfully tested   |
-| Ubuntu 20       | Successfully tested   |
-| Rocky Linux 8   | Successfully tested.  |
-| Raspberry Pi OS | Successfully tested.  |
+| CentOS 8     	  | New version Untested  |
+| Debian 8        | New version Untested  |
+| Debian 9     	  | New version Untested  |
+| Debian 10       | New version Untested  |
+| Debian 11    	  | New version Untested  |
+| Debian 12       | New version Untested  |
+| Ubuntu 18       | New version Untested  |
+| Ubuntu 20       | New version Untested  |
+| Rocky Linux 8   | New version Untested  |
+| Raspberry Pi OS | New version Untested  |
+| Fedora 38       | New version Untested  |
 
 
 Pre-Setup Debian,Rasbian and Ubuntu 
@@ -50,7 +51,7 @@ Pre-Setup CentOS, Rocky Linux and RedHat
 Install default packages:
 
 ~~~
-yum install bc bind-utils redhat-lsb-core git 
+yum install bc bind-utils redhat-lsb-core git lsb-release
 ~~~
 
 Installation
@@ -59,10 +60,9 @@ Installation
 Script runs only as root.
 
 ~~~
-sudo -i
 git clone https://github.com/rtulke/dynmotd.git
 cd dynmotd
-./dynmotd.sh --install
+sudo ./dynmotd.sh --install
 ~~~
 
 To test dynmotd properly, you should log out of the system and log in again.
